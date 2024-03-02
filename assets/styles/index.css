@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+.title{
+    font-weight: bold;
+}
+.home-page{
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+	background-color: #f5f5f5;
+    color: #334155;
+	a {
+		text-decoration: none;
+		cursor: pointer;
+	}
+    .hero-background{
+        display: flex;
+        flex-direction: column;
+        height: 1024px;
+        margin: 0%;
+        background-image: url("./../images/slide1.jpg");
+        background-position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        /* justify-content: center; */
+        animation: change 42s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        height: 158.5px;
+        background-color: black;
+    }
+
+}
+
+@keyframes change{
+    0%
+    {
+        background-image: url("./../images/slide1.jpg");
+    }
+    16.66%
+    {
+        background-image: url("./../images/slide2.jpg");
+    }
+    33.32%
+    {
+        background-image: url("./../images/slide3.jpg");
+    }
+    49.98%
+    {
+        background-image: url("./../images/slide4.jpg");
+    }
+    66.64%
+    {
+        background-image: url("./../images/slide5.jpg");
+    }
+    83.3%
+    {
+        background-image: url("./../images/slide6.jpg");
+    }
+    100%
+    {
+        background-image: url("./../images/slide7.jpg");
+    }
+}
