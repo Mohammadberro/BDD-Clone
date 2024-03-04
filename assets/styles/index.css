@@ -30,7 +30,11 @@
 }
 .nav {
     display: flex;
-    background-color: black;
+    height: 126px;
+    width: 100%;
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
 }
 
 @keyframes change{
